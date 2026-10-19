@@ -22,24 +22,25 @@
 
         <details class="menu-responsivo">
             <summary aria-label="Abrir menu de navegação">☰ Menu</summary>
-
-            <nav class="navegacao" aria-label="Menu principal">
-                <a href="#home">Home</a>
-                <a href="#sobre">Sobre nós</a>
-                <a href="#servicos">Serviços</a>
-                <a href="#depoimentos">Depoimentos</a>
-                <a href="#contato" class="botao-menu">Contato</a>
-            </nav>
+                <div class="menu">
+                    <nav class="menu__navegacao" aria-label="Menu principal">
+                        <a class="menu__link" href="#home">Home</a>
+                        <a class="menu__link" href="#sobre">Sobre nós</a>
+                        <a class="menu__link" href="#servicos">Serviços</a>
+                        <a class="menu__link" href="#depoimentos">Depoimentos</a>
+                        <a class="menu__link" href="#contato" class="botao-menu">Contato</a>
+                    </nav>
+                </div>
         </details>
     </header>
 
     <main>
         <!-- 2. HOME -->
         <section id="home" class="home">
-            <div class="home-conteudo">
-                <p class="subtitulo">CRIATIVIDADE QUE GERA RESULTADOS</p>
+            <div class="home__conteudo">
+                <p class="home__subtitulo">CRIATIVIDADE QUE GERA RESULTADOS</p>
 
-                <h1>Suas ideias merecem ganhar <span>vida na internet.</span></h1>
+                <h1 class="home__titulo">Suas ideias merecem ganhar <span>vida na internet.</span></h1>
 
                 <p>
                     Criamos experiências digitais que conectam marcas
@@ -53,8 +54,8 @@
                 </div>
             </div>
 
-            <div class="home-imagem">
-                <img
+            <div class="imagens">
+                <img class="imagens__home"
                     src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80"
                     srcset="
                         https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=600&q=75 600w,
