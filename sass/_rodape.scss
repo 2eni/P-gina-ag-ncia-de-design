@@ -1,0 +1,15 @@
+@use 'variaveis';
+@use 'geral';
+
+.rodape {
+    background: #101010;
+    color: variaveis.$branco;
+    padding: 2.5rem 5%;
+    text-align: center;
+}
+
+.rodape p {
+    color: #cccccc;
+    margin-top: 0.7rem;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,44 @@
+@use 'variaveis';
+@use 'geral';
+
+.depoimentos-grid {
+    max-width: variaveis.$largura-maxima;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.depoimento-card {
+    background: variaveis.$cinza-claro;
+    padding: 2rem;
+    border-radius: 0.8rem;
+}
+
+.estrelas {
+    color: variaveis.$laranja;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.depoimento-card blockquote {
+    color: variaveis.$cor-texto;
+    margin-bottom: 1.5rem;
+}
+
+.depoimento-card h3 {
+    font-size: 1.05rem;
+}
+
+.depoimento-card > p:last-child {
+    color: variaveis.$cor-texto;
+    font-size: 0.9rem;
+}
+
+.aviso-depoimentos {
+    text-align: center;
+    color: variaveis.$cor-texto;
+    font-size: 0.85rem;
+    margin-top: 2rem;
+}

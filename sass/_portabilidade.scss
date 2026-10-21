@@ -1,0 +1,143 @@
+@use 'variaveis';
+@use 'geral';
+
+/* ===== TABLETS ===== */
+
+@media (max-width: 64rem) {
+    .home {
+        gap: 2rem;
+        min-height: auto;
+    }
+
+    .valores {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .servicos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cabecalho {
+        gap: 1rem;
+    }
+
+    .menu__navegacao {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* ===== CELULARES ===== */
+
+@media (max-width: 48rem) {
+    .cabecalho {
+        flex-wrap: wrap;
+        padding: 1rem 5%;
+    }
+
+    .menu-responsivo {
+        margin-left: auto;
+    }
+
+    .menu-responsivo summary {
+        display: block;
+        padding: 0.5rem;
+        color: variaveis.$laranja;
+        font-weight: bold;
+    }
+
+    .navegacao {
+        display: none;
+        position: absolute;
+        top: calc(100% + 1rem);
+        right: 0;
+        width: min(85vw, 20rem);
+        padding: 1rem;
+        background: variaveis.$cinza;
+        border: 0.1rem solid #444444;
+        border-radius: 0.5rem;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+
+    .menu-responsivo[open] .navegacao {
+        display: flex;
+    }
+
+    .menu__navegacao a {
+        padding: 0.7rem;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 4rem 5%;
+        gap: 2.5rem;
+    }
+
+    .home h1 {
+        font-size: clamp(2.3rem, 9vw, 3.5rem);
+    }
+
+    .home-imagem img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .secao {
+        padding: 4rem 5%;
+    }
+
+    .servicos-grid,
+    .depoimentos-grid,
+    .valores,
+    .contato-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .contato-grid {
+        gap: 2rem;
+    }
+
+    .servico-card,
+    .depoimento-card {
+        padding: 1.5rem;
+    }
+}
+
+
+/* ===== TELAS MUITO PEQUENAS ===== */
+
+@media (max-width: 24rem) {
+    .logo {
+        white-space: normal;
+        max-width: 70%;
+        font-size: 1rem;
+    }
+
+    .home-botoes {
+        flex-direction: column;
+    }
+
+    .home-botoes a {
+        width: 100%;
+    }
+}
+
+
+/* ===== ACESSIBILIDADE ===== */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}

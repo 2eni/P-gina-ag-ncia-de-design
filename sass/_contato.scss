@@ -1,0 +1,74 @@
+@use 'variaveis';
+@use 'geral';
+
+.contato {
+    background: variaveis.$preto;
+    color: variaveis.$branco;
+}
+
+.contato .secao-titulo > p:last-child {
+    color: #d0d0d0;
+}
+
+.contato-grid {
+    max-width: variaveis.$largura-maxima;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4rem;
+}
+
+.contato-informacoes h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contato-informacoes p {
+    margin-bottom: 1.5rem;
+    overflow-wrap: anywhere;
+}
+
+.contato-informacoes strong {
+    color: var(--laranja);
+}
+
+.aviso-contato {
+    font-size: 0.85rem;
+    color: #cccccc;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 0.1rem solid #555555;
+    border-radius: 0.4rem;
+    background: variaveis.$cinza;
+    color: variaveis.$branco;
+    outline: none;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: variaveis.$laranja;
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 8rem;
+}
+
+.formulario .botao {
+    margin-top: 0.8rem;
+}
