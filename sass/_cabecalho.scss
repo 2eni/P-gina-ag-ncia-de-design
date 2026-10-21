@@ -14,20 +14,20 @@
     position: sticky;
     top: 0;
     z-index: 100;
-}
+    
+    &__logo {
+        font-size: clamp(1rem, 2vw, 1.4rem);
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    
+    &__logo span {
+        color: variaveis.$laranja;
+    }
 
-.logo {
-    font-size: clamp(1rem, 2vw, 1.4rem);
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-.logo span {
-    color: variaveis.$laranja;
-}
-
-.logo strong {
-    color: variaveis.$laranja;
+    &__logo strong {
+        color: variaveis.$laranja;
+    }
 }
 
 .menu-responsivo {
@@ -40,24 +40,30 @@
     list-style: none;
 }
 
-.menu__navegacao {
+.navegacao {
     display: flex;
     align-items: center;
     gap: clamp(0.8rem, 2vw, 2rem);
-}
 
-.menu__link {
-    transition: color 0.3s;
-}
+    &__link {
+        transition: color 0.3s;
+        
+        &:hover {
+            color: variaveis.$laranja;
+        }
+    }
 
-.menu__link:hover {
-    color: variaveis.$laranja;
-}
+    &__link--botao {
+        background: variaveis.$laranja;
+        color: variaveis.$preto;
+        padding: 0.65rem 1.2rem;
+        border-radius: 0.4rem;
+        font-weight: bold;
+        text-decoration: none;
 
-.navegacao .botao-menu {
-    background: variaveis.$laranja;
-    color: variaveis.$preto;
-    padding: 0.65rem 1.2rem;
-    border-radius: 0.4rem;
-    font-weight: bold;
+        &:hover {
+            background: variaveis.$preto;
+            color: variaveis.$laranja;
+        }
+    } 
 }

@@ -10,32 +10,32 @@
     color: #d0d0d0;
 }
 
-.contato-grid {
+.cont-grid {
     max-width: variaveis.$largura-maxima;
     margin: auto;
 
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 4rem;
-}
 
-.contato-informacoes h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
+    &__info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 
-.contato-informacoes p {
-    margin-bottom: 1.5rem;
-    overflow-wrap: anywhere;
-}
+    &__info p {
+        margin-bottom: 1.5rem;
+        overflow-wrap: anywhere;
+    }
 
-.contato-informacoes strong {
-    color: var(--laranja);
-}
+    &__info strong {
+        color: variaveis.$laranja;
+    }
 
-.aviso-contato {
-    font-size: 0.85rem;
-    color: #cccccc;
+    &__info--aviso {
+        font-size: 0.85rem;
+        color: #cccccc;
+    }
 }
 
 .formulario {

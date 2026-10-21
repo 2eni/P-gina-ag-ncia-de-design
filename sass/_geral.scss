@@ -36,3 +36,36 @@ textarea {
 section {
     scroll-margin-top: 5rem;
 }
+
+.secao {
+    padding: 6rem 5%;
+}
+
+.secao-titulo {
+    max-width: 45rem;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.secao-titulo h2 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.secao-titulo h2 span,
+.home h1 span {
+    color: var(--laranja);
+}
+
+.secao-titulo > p:last-child {
+    color: var(--texto);
+}
+
+.subtitulo {
+    color: var(--laranja);
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.12rem;
+    margin-bottom: 1rem;
+}

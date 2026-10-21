@@ -14,39 +14,31 @@
     gap: 1.5rem;
 }
 
-.servico-card {
+.card {
     background: variaveis.$branco;
     padding: 2rem;
     border-radius: 0.8rem;
     border-bottom: 0.25rem solid transparent;
     box-shadow: 0 0.4rem 1.5rem rgb(0 0 0 / 5%);
     transition: transform 0.3s, border-color 0.3s;
-}
 
-.servico-card:hover {
-    transform: translateY(-0.4rem);
-    border-color: variaveis.$laranja;
-}
+    &:hover {
+        transform: translateY(-0.4rem);
+        border-color: variaveis.$laranja;
+    }
 
-.servico-icone {
-    display: inline-block;
-    color: variaveis.$laranja;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+    &__icone {
+        display: inline-block;
+        color: variaveis.$laranja;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
 }
-
-.servico-card h3 {
+.card h3 {
     margin-bottom: 0.8rem;
 }
 
-.servico-card p {
-    color: variaveis.$laranja;
+.card p {
+    color: variaveis.$cor-texto;
 }
-
-
-
-
-
-
-
