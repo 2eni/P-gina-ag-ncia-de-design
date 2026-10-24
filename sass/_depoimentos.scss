@@ -1,7 +1,7 @@
 @use 'variaveis';
-@use 'geral';
+@use 'mixins';
 
-.dep-grid {
+.depoimento {
     max-width: variaveis.$largura-maxima;
     margin: auto;
 
@@ -11,23 +11,22 @@
 
     &__card {
         background: variaveis.$cinza-claro;
-        padding: 2rem;
-        border-radius: 0.8rem;
+         @include mixins.card-layout;
 
         &--estrelas {
             color: variaveis.$laranja;
             letter-spacing: 0.2rem;
             margin-bottom: 1rem;
         }
-    }
+        
+        &--comentario {
+            color: variaveis.$cor-texto;
+            margin-bottom: 1.5rem;
+        }
 
-    &__card blockquote {
-        color: variaveis.$cor-texto;
-        margin-bottom: 1.5rem;
-    }
-
-    &__card h3 {
-        font-size: 1.05rem;
+        &--nome {
+            font-size: 1.05rem;
+        }
     }
 
     &__card >  p:last-child {
@@ -35,9 +34,6 @@
         font-size: 0.9rem;
     }
 }
-
-
-
 .aviso-depoimentos {
     text-align: center;
     color: variaveis.$cor-texto;

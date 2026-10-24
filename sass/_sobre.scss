@@ -1,6 +1,4 @@
 @use 'variaveis';
-@use 'geral';
-@use 'sass:math';
 
 .sobre {
     max-width: variaveis.$largura-maxima;
@@ -24,14 +22,13 @@
     border-left: 0.2rem solid variaveis.$laranja;
     background: variaveis.$cinza-claro;
     border-radius: 0.5rem;
+    }
+    &__titulos {
+        margin-bottom: 0.5rem;
+    }
 
-        &h3 {
-            margin-bottom: 0.5rem;
-        }
-
-        &p {
-            color: variaveis.$cor-texto;
-        }
+    &__descricao {
+        color: variaveis.$cor-texto;
     }
 }
 

@@ -1,4 +1,6 @@
 @use 'variaveis';
+@use 'mixins';
+
 @use 'home';
 @use 'cabecalho';
 @use 'sobre';
@@ -7,4 +9,7 @@
 @use 'contato';
 @use 'rodape';
 @use 'portabilidade';
-@use 'geral';
+
+@use 'reset';
+@use 'base';
+@use 'componentes';

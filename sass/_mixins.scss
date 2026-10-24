@@ -1,0 +1,20 @@
+@use 'variaveis';
+
+// Usado em depoimentos.scss e servicos.scss
+@mixin card-layout($x: 2rem, $y: 0.8rem){
+    padding: $x;
+    border-radius: $y;
+}
+
+// Usado em home.scss e contato.scss
+@mixin botao{
+    display: inline-block;
+    border: 0;
+    border-radius: 0.4rem;
+    padding: 0.85rem 1.4rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s, background 0.2s;
+    color: variaveis.$preto;
+}

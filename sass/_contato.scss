@@ -1,5 +1,5 @@
 @use 'variaveis';
-@use 'geral';
+@use 'mixins';
 
 .contato {
     background: variaveis.$preto;
@@ -18,23 +18,25 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 4rem;
 
-    &__info h3 {
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
+    &__info {
+        &--titulo {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
 
-    &__info p {
-        margin-bottom: 1.5rem;
-        overflow-wrap: anywhere;
-    }
+        &--paragrafo {
+            margin-bottom: 1.5rem;
+            overflow-wrap: anywhere;
+        }
 
-    &__info strong {
-        color: variaveis.$laranja;
-    }
+        &--subtitulo {
+            color: variaveis.$laranja;
+        }
 
-    &__info--aviso {
-        font-size: 0.85rem;
-        color: #cccccc;
+        &--aviso {
+            font-size: 0.85rem;
+            color: #cccccc;
+        }
     }
 }
 
@@ -42,33 +44,32 @@
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
+   
+    &__titulo {
+        font-weight: bold;
+    }
+
+    &__caixa {
+        width: 100%;
+        padding: 0.9rem 1rem;
+        border: 0.1rem solid #555555;
+        border-radius: 0.4rem;
+        background: variaveis.$cinza;
+        color: variaveis.$branco;
+        outline: none;
+
+        &:focus {
+            border-color: variaveis.$laranja;
+        }
+    }
+    &__botao {
+        @include mixins.botao;
+        background: variaveis.$laranja;
+
+
+        &:hover{
+            transform: translateY(-0.2rem);
+        }
+    }
 }
 
-.formulario label {
-    font-weight: bold;
-}
-
-.formulario input,
-.formulario textarea {
-    width: 100%;
-    padding: 0.9rem 1rem;
-    border: 0.1rem solid #555555;
-    border-radius: 0.4rem;
-    background: variaveis.$cinza;
-    color: variaveis.$branco;
-    outline: none;
-}
-
-.formulario input:focus,
-.formulario textarea:focus {
-    border-color: variaveis.$laranja;
-}
-
-.formulario textarea {
-    resize: vertical;
-    min-height: 8rem;
-}
-
-.formulario .botao {
-    margin-top: 0.8rem;
-}
