@@ -5,13 +5,6 @@
     margin: auto;
 }
 
-.texto {
-        max-width: 55rem;
-        margin: 0 auto 3rem;
-        text-align: center;
-        color: variaveis.$cor-texto;
-    }
-
 .valores {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));

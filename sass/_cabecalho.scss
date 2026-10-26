@@ -32,12 +32,12 @@
 
 .menu-responsivo {
     position: relative;
-}
 
-.menu-responsivo summary {
-    display: none;
-    cursor: pointer;
-    list-style: none;
+    &__logo {
+        display: none;
+        cursor: pointer;
+        list-style: none;
+    }
 }
 
 .navegacao {

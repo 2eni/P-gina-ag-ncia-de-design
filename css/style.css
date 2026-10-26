@@ -22,6 +22,9 @@
   line-height: 1.12;
   margin-bottom: 1.5rem;
 }
+.home__conteudo--titulo--variante {
+  color: #ff8a00;
+}
 
 .imagens__home {
   flex: 1 1 45%;
@@ -87,8 +90,7 @@
 .menu-responsivo {
   position: relative;
 }
-
-.menu-responsivo summary {
+.menu-responsivo__logo {
   display: none;
   cursor: pointer;
   list-style: none;
@@ -121,13 +123,6 @@
 .sobre {
   max-width: 75rem;
   margin: auto;
-}
-
-.texto {
-  max-width: 55rem;
-  margin: 0 auto 3rem;
-  text-align: center;
-  color: #555555;
 }
 
 .valores {
@@ -226,8 +221,7 @@
   background: #171717;
   color: #ffffff;
 }
-
-.contato .secao-titulo > p:last-child {
+.contato__titulo > p:last-child {
   color: #d0d0d0;
 }
 
@@ -296,8 +290,7 @@
   padding: 2.5rem 5%;
   text-align: center;
 }
-
-.rodape p {
+.rodape__paragrafo {
   color: #cccccc;
   margin-top: 0.7rem;
   font-size: 0.9rem;
@@ -332,7 +325,7 @@
   .menu-responsivo {
     margin-left: auto;
   }
-  .menu-responsivo summary {
+  .menu-responsivo__logo {
     display: block;
     padding: 0.5rem;
     color: #ff8a00;
@@ -355,7 +348,7 @@
   .menu-responsivo[open] .navegacao {
     display: flex;
   }
-  .menu__navegacao a {
+  .navegacao__link {
     padding: 0.7rem;
   }
   .home {
@@ -364,26 +357,26 @@
     padding: 4rem 5%;
     gap: 2.5rem;
   }
-  .home h1 {
+  .home__conteudo--titulo {
     font-size: clamp(2.3rem, 9vw, 3.5rem);
   }
-  .home-imagem img {
+  .imagens__home {
     aspect-ratio: 4/3;
   }
   .secao {
     padding: 4rem 5%;
   }
   .servicos-grid,
-  .depoimentos-grid,
+  .depoimento,
   .valores,
-  .contato-grid {
+  .cont-grid {
     grid-template-columns: minmax(0, 1fr);
   }
-  .contato-grid {
+  .cont-grid {
     gap: 2rem;
   }
-  .servico-card,
-  .depoimento-card {
+  .card,
+  .depoimento {
     padding: 1.5rem;
   }
 }
@@ -394,10 +387,10 @@
     max-width: 70%;
     font-size: 1rem;
   }
-  .home-botoes {
+  .botoes {
     flex-direction: column;
   }
-  .home-botoes a {
+  .botoes__botoes {
     width: 100%;
   }
 }
@@ -458,16 +451,22 @@ section {
   margin: 0 auto 3rem;
   text-align: center;
 }
-.secao .secao__titulo h2 {
+.secao__titulo--subtitulo {
   font-size: clamp(1.8rem, 4vw, 3rem);
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-.secao .secao__titulo h2 span,
-.secao .home h1 span {
+.secao__titulo--variante {
   color: #ff8a00;
 }
-.secao .secao__titulo > p:last-child {
+.secao__titulo > p:last-child {
+  color: #555555;
+}
+
+.texto {
+  max-width: 55rem;
+  margin: 0 auto 3rem;
+  text-align: center;
   color: #555555;
 }
 

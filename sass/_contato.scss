@@ -4,10 +4,10 @@
 .contato {
     background: variaveis.$preto;
     color: variaveis.$branco;
-}
 
-.contato .secao-titulo > p:last-child {
-    color: #d0d0d0;
+    &__titulo > p:last-child {
+        color: #d0d0d0;
+    }
 }
 
 .cont-grid {

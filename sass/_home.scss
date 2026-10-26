@@ -28,6 +28,10 @@
             font-size: clamp(2.5rem, 5vw, 4.5rem);
             line-height: 1.12;
             margin-bottom: 1.5rem;
+            
+            &--variante {
+                color: variaveis.$laranja;
+            }
         }
     }
 }

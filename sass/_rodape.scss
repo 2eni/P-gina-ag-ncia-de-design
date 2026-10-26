@@ -5,10 +5,10 @@
     color: variaveis.$branco;
     padding: 2.5rem 5%;
     text-align: center;
-}
 
-.rodape p {
-    color: #cccccc;
-    margin-top: 0.7rem;
-    font-size: 0.9rem;
+    &__paragrafo {
+        color: #cccccc;
+        margin-top: 0.7rem;
+        font-size: 0.9rem;
+    }
 }
